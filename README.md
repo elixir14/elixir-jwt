@@ -4,21 +4,24 @@ custom_jwt : custom_jwt is a simple Django app to provide authentication using j
 
 install with pip :
 
-pip install -i https://test.pypi.org/simple/ custom-jwt
+      pip install -i https://test.pypi.org/simple/ custom-jwt
 
 
 
 Quick start
 -----------
 
-1. Add "custom_jwt" to your INSTALLED_APPS setting like this::
+1. Modify your settings file with following changes:
 
-   a)    INSTALLED_APPS = [
-          ...
-          ...
-          'custom_jwt',
-        ]
-    
+   a) Add "custom_jwt" to your INSTALLED_APPS setting like this:
+               
+          INSTALLED_APPS = [
+             ...
+             ...
+             'custom_jwt',
+           ]
+
+
    b) Also add the JWT_AUTH in your settings file like this:
       set the values for expiry and refresh token as per your need.
         
