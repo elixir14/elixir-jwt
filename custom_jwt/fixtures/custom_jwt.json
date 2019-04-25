@@ -1,0 +1,11 @@
+[
+{
+    "model": "custom_jwt.blacklistedtoken",
+    "pk": 1,
+    "fields": {
+        "token": "b'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJ1c2VybmFtZSI6Im1pa2UiLCJleHAiOjE1ODcwMzIxMjcsImVtYWlsIjoibWlrZUB3YXluZWNvcnAuY29tIiwib3JpZ19pYXQiOjE1NTU0MDk3Mjd9.SzTD1PMVrc_cBSRPDQqH0SNF1LbJ6UmnPGacLx2XJTE'",
+        "user": 2,
+        "timestamp": "2019-04-16T10:38:01.149Z"
+    }
+}
+]
