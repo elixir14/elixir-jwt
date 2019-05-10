@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 import datetime
 import os
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -105,16 +104,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.BasicAuthentication',
-    ),
-    'EXCEPTION_HANDLER': 'custom_jwt.exceptions.custom_exception_handler',
-}
-
-JWT_AUTH = {
-    'JWT_AUTH_HEADER_PREFIX': 'bearer',
-    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1000),
-    'JWT_ALLOW_REFRESH': True,
-    'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(days=7),
-    'JWT_RESPONSE_PAYLOAD_HANDLER': 'custom_jwt.views.jwt_response_payload_handler',
+    )
 }
 
 
@@ -182,3 +172,4 @@ try:
 except ImportError:
     raise Exception("Local settings file not configured")
 
+from custom_jwt.jwt_settings import *
